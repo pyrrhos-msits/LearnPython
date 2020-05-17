@@ -1,0 +1,1 @@
+print(type("hello")) gibt den Datentyp aus

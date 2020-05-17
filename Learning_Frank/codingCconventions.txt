@@ -1,0 +1,5 @@
+https://www.python.org/dev/peps/pep-0008/
+
+- class name startet mit einem Grossbuchstaben und wird in 
+  CamelCase geschrieben. Keine Unterstriche
+  

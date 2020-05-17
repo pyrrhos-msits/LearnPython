@@ -1,0 +1,15 @@
+Exeptions - Fehler die währed der Laufzeit auftreten
+Syntax Error - Fehler der während des Compilierens auftritt
+
+IndexError - Zugriff auf einen nicht existierenden Index
+
+NameError - wenn Variale benutzt wird, bevor sie definiert wurde
+
+TypeError - wenn eine Operation angewendet auf unangebrachten Datentyp angewendet wird
+
+ValueError - tritt auf, wenn man versucht eine Variable vom richtigen
+			 Typ aber mit einem unangebrachtem Wert zu benutzen
+
+ZeroDivisionError - Division durch Null
+
+			 

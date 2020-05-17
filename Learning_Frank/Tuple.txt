@@ -1,0 +1,35 @@
+<<Tuple sieht aus wie eine Liste, ist aber unveränderlich
+- tuples sind schneller und effizienter als listen
+- tuple können als dictionary key verwendet werden
+- es ist unmöglich die Werte in einem tuple zu verändern>>
+
+<< Definition >>
+empty_tuple = ()
+print(type(empty_tuple))  # <class 'tuple'>
+<< Tuple unterscheidet sich von einer Liste durch Komma >>
+<<Kein tuple>>
+not_a_tuple = ('cat')
+print(not_a_tuple)        # 'cat'
+print(type(not_a_tuple))   # <class 'str'>
+<<tuple>>
+now_a_tuple = ('cat',)
+print(now_a_tuple)        # ('cat',)
+print(type(now_a_tuple))   # <class 'tuple'>
+<<Zum definieren eines tuples reicht auch nur die verwendung eines Kommas>>
+weekend = 'Saturday', 'Sunday'
+print(weekend)        # ('Saturday', 'Sunday')
+print(type(weekend))   # <class 'tuple'>
+<< die built in function tuple() wandelt strings, lists und andere 
+iterables zu einem tuple. Man kann damit aber auch leere tuple erstellen>>
+# another empty tuple
+empty_tuple = tuple()
+print(empty_tuple)        # ()
+print(type(empty_tuple))  # <class 'tuple'>
+ 
+# a list turned into a tuple
+bakers_dozen = tuple([12, 1])
+print(bakers_dozen == (12, 1))  # True
+ 
+# a tuple from a string
+sound = tuple('meow')
+print(sound)  # ('m', 'e', 'o', 'w')

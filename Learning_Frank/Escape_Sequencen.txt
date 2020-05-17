@@ -1,0 +1,24 @@
+Es gibt Zeichenfolgen, die den Textfluss steuern, wie zum Beispiel ein Newline (Zeilenvorschub) oder Tabulator. Sie lassen sich nicht auf dem Bildschirm als einzelne Zeichen darstellen. Die Darstellung solcher Zeichen innerhalb von String-Literalen erfolgt mittels spezieller Zeichenfolgen, sogenannter Escape-Sequenzen. Eine Escape-Sequenz wird von einem Backslash \ eingeleitet, gefolgt von der Kennung des gewünschten Sonderzeichens. Übersicht der Escape-Zeichen:
+\ Zeilenfortsetzung
+\\ Rückwärtsschrägstrich
+\' Einzelnes Anführungszeichen
+\" Doppeltes Anführungszeichen
+\a Glocke
+\b Rückschritt
+\e Ausmaskieren
+\0 Null
+\n Zeilenvorschub (linefeed, LF)
+\v Vertikaler Tabulator
+\t Horizontaler Tabulator
+\r Wagenrücklauf (carriage return, CR)
+\f Seitenvorschub
+\0XX Oktaler Wert
+\xXX Hexadezimaler Wert
+Die Auswertung von Escape-Zeichen kann man verhindern, indem man einem String ein r oder R unmittelbar voranstellt.
+Beispiel:
+r"\n bewirkt einen Zeilenvorschub"
+\b - löscht das Zeichen vor dem Backslash
+
+Um einen \ zu drucken muss dieser 2 mal eingegeben werden
+
+- repr() gibt eine druckbare Version aus
