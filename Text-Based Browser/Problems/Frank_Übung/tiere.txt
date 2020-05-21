@@ -1,0 +1,4 @@
+Hund
+Katze
+Huhn
+Elch

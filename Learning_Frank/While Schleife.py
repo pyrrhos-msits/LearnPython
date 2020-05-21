@@ -28,3 +28,16 @@ while True:
     else:
         a, b = user.split()
         print(int(a) + int(b))
+        
+'''Schreibe eine Schleife in der der User so lange Eingaben tätigen kann
+bis er den 'exit' eingibt'''
+while True:
+    site = input()
+    if site == 'bloomberg.com':
+        print(bloomberg_com)
+        continue
+    elif site == 'nytimes.com':
+        print(nytimes_com)
+        continue
+    elif site == 'exit':
+        break

@@ -1,0 +1,5 @@
+file = open('tiere.txt', 'r')
+print(file)
+print('Fileread = ',file.read())
+print('file.readline() = ', file.readline())
+print('file.filereadlines() = ', file.readlines())

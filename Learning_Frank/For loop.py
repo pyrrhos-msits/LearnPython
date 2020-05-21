@@ -68,3 +68,17 @@ for i in range(1, len(scores) + 1):
 else:
     print('You won')
 print(scores[:i].count('C'))
+
+# Nächstes Beispiel
+# Prüfe ob a < 10 oder größer 250 ist
+a = int(input().strip())
+def check(x):
+    if a < 10 or a > 250:
+        print(True)
+    else:
+        print(False)
+
+check(a)
+
+oder die Kurzform:
+print(a < 10 or a > 250)
