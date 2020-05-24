@@ -3,7 +3,7 @@ import sys
 
 
 
-nytimes_com = '''
+nytimes.com = '''
 This New Liquid Is Magnetic, and Mesmerizing
 
 Scientists have created “soft” magnets that can flow 
@@ -17,7 +17,7 @@ Jessica Wade has added nearly 700 Wikipedia biographies for
  important female and minority scientists in less than two 
  years.
 '''
-bloomberg_com = '''
+bloomberg.com = '''
 The Space Race: From Apollo 11 to Elon Musk
 
 It's 50 years since the world was gripped by historic images
@@ -35,50 +35,32 @@ Twitter and Square Chief Executive Officer Jack Dorsey
 addressed Apple Inc. employees at the iPhone maker’s headquarters
 Tuesday, a signal of the strong ties between the Silicon Valley giants.
 '''
-url = ['bloomberg', 'nytimes']
-#dirName = 'tb_tabs'
+
 dirName = sys.argv[1]
-#print(dirName)
 if not os.path.exists(dirName):
     os.mkdir(dirName)
 
-
 while True:
     site = input()
-    if '.' in site:
-        short = site[:site.rfind('.')]
-    else:
-        short = site
+    short = site[:site.rfind('.')]
     dateiname = dirName + "\\" + short + ".txt"
-    if site == 'exit':
-        sys.exit()
-    # Wenn der Dateiname existiert zeige die Datei an
-    elif os.path.exists(dateiname):
-        file = open(dateiname, 'r', encoding='utf-8')
+    if os.path.exists(dateiname):
+        file = open(dateiname, 'r')
         print(file.read())
         file.close()
         continue
-    elif '.' in site and short in url:
-        if short == 'bloomberg':
-            print(bloomberg_com)
-        if short == 'nytimes':
-            print(nytimes_com)
-        file = open(dateiname, 'w', encoding='utf-8')
-        if short == 'bloomberg':
-            file.write(bloomberg_com)
-            file.close()
-            continue
-        elif short == 'nytimes':
-            file.write(nytimes_com)
-            file.close()
-            continue
-    elif '.' in site and short not in url:
-        print('error')
-        continue
     else:
-        print('error')
-        continue
+        file = open(dateiname, 'w', encoding='utf-8')
+        file.write(short)
+        file.close()
 
 
+
+
+
+
+
+# lst_dt_indx = site.rfind('.') # ermittelt index vom letzten dot
+# shrt_input = site[:lst_dt_indx]# schneidet ab letztem dot ab
 
 

@@ -22,7 +22,9 @@ Kein separates Modul erforderlich
 - Zugriffsmodi
     - 'r' - read wenn Datei nicht vorhanden 'error'
     - 'w' - write wenn Datei bereits vorhanden ist, wird sie überschrieben
-    - 'a' - zum schreiben offen. Wenn Datei bereits vorhanden, wird der Inhalt angehängt
+            wenn keine datei vorhanden, wird sie angelegt.
+    - 'a' - zum schreiben offen. Wenn Datei bereits vorhanden, wird der Inhalt angehängt,
+            ansonsten wird eine neue Datei erzeugt
     - 'b' - im Binärmodus öffnen
     - '+' - zum aktualisieren geöffnet lesen und schreiben
     - 't' - als text öffnen (default) kann deshalb weggelassen werden

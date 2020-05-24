@@ -36,9 +36,8 @@ addressed Apple Inc. employees at the iPhone maker’s headquarters
 Tuesday, a signal of the strong ties between the Silicon Valley giants.
 '''
 url = ['bloomberg', 'nytimes']
-#dirName = 'tb_tabs'
-dirName = sys.argv[1]
-#print(dirName)
+dirName = 'tb_tabs'
+# dirName = sys.argv[1]
 if not os.path.exists(dirName):
     os.mkdir(dirName)
 
@@ -59,10 +58,6 @@ while True:
         file.close()
         continue
     elif '.' in site and short in url:
-        if short == 'bloomberg':
-            print(bloomberg_com)
-        if short == 'nytimes':
-            print(nytimes_com)
         file = open(dateiname, 'w', encoding='utf-8')
         if short == 'bloomberg':
             file.write(bloomberg_com)
@@ -73,12 +68,22 @@ while True:
             file.close()
             continue
     elif '.' in site and short not in url:
-        print('error')
+        print('Unknown url')
         continue
     else:
         print('error')
-        continue
 
 
+
+
+
+
+
+
+
+
+
+# lst_dt_indx = site.rfind('.') # ermittelt index vom letzten dot
+# shrt_input = site[:lst_dt_indx]# schneidet ab letztem dot ab
 
 

@@ -53,7 +53,7 @@ print(message)  # bonjour and welcome to Paris!
 - str.lstrip([chars]) 
 	#removes the leading characters . If the argument chars isn’t specified, leading whitespaces are removed.
 - str.rstrip([chars]) 
-	#removes the trailing characters . The default for the argument chars is also whitespace.
+	#entfernt die Zeichen . The default for the argument chars is also whitespace.
 - str.strip([chars]) 
 	#entfernt beides the leading and the trailing characters. The default is whitespace.
 

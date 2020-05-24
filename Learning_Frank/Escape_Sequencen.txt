@@ -1,3 +1,4 @@
+http://python-ds.com/python-3-escape-sequences
 Es gibt Zeichenfolgen, die den Textfluss steuern, wie zum Beispiel ein Newline (Zeilenvorschub) oder Tabulator. Sie lassen sich nicht auf dem Bildschirm als einzelne Zeichen darstellen. Die Darstellung solcher Zeichen innerhalb von String-Literalen erfolgt mittels spezieller Zeichenfolgen, sogenannter Escape-Sequenzen. Eine Escape-Sequenz wird von einem Backslash \ eingeleitet, gefolgt von der Kennung des gewünschten Sonderzeichens. Übersicht der Escape-Zeichen:
 \ Zeilenfortsetzung
 \\ Rückwärtsschrägstrich

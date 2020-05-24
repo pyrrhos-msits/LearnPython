@@ -12,9 +12,12 @@ wenn es dann nichts findet wird ein Fehler geworfen
 https://docs.python.org/3/py-modindex.html
 
 Beispiele für Module
+- argparse
 - math
-- string
+- os - auf Betriebssystem zugreifen | Pfade erstellen
 - random
+- string
+- sys - zugriff auf Argumente
 
 
 
