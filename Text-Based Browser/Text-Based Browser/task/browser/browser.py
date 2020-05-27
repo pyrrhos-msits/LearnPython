@@ -1,5 +1,6 @@
 import os
 import sys
+from collections import deque
 
 
 
@@ -42,28 +43,44 @@ dirName = sys.argv[1]
 if not os.path.exists(dirName):
     os.mkdir(dirName)
 
+# Funktionsdefinitionen --------------------------------------------------------------------------
+
+
+pages = deque()# Stapel für die Aufgerufenen Dateien
 
 while True:
     site = input()
     if '.' in site:
-        short = site[:site.rfind('.')]
+        short = site[:site.rfind('.')]#kurzbezeichnung der Seite. Alles nach dem '.'
+                                      #wird abgeschnitten
     else:
-        short = site
-    dateiname = dirName + "\\" + short + ".txt"
-    if site == 'exit':
+        short = site # wenn kein '.' im Dateinamen
+
+    dateiname = dirName + "\\" + short + ".txt" # dateiname z.B: tb_tabs\bloomberg.txt
+
+    if site == 'exit': #bei Eingabe von exit ist Schluss
         sys.exit()
-    # Wenn der Dateiname existiert zeige die Datei an
-    elif os.path.exists(dateiname):
+
+    if site == 'back':
+        pass
+    # function path_exists
+    elif os.path.exists(dateiname): # Wenn der Dateiname existiert , d.h. wenn die Seite
+                                    # vorher schon mal aufgerufen wurde, zeige die Datei an
         file = open(dateiname, 'r', encoding='utf-8')
         print(file.read())
         file.close()
         continue
-    elif '.' in site and short in url:
-        if short == 'bloomberg':
+
+    elif '.' in site and short in url: # wenn der Dateiname nicht existiert aber ein '.'
+                                        # im input vorhanden ist, sieh in der Liste url nach
+                                       #  ob die Seite dort existiert
+        if short == 'bloomberg':       # wenn die Seite existiert zeige sie an
             print(bloomberg_com)
         if short == 'nytimes':
             print(nytimes_com)
-        file = open(dateiname, 'w', encoding='utf-8')
+
+        file = open(dateiname, 'w', encoding='utf-8') # Nach dem die Seite angezeigt wurde,
+                                                      # wird jetzt die Datei geschrieben
         if short == 'bloomberg':
             file.write(bloomberg_com)
             file.close()
@@ -72,11 +89,12 @@ while True:
             file.write(nytimes_com)
             file.close()
             continue
-    elif '.' in site and short not in url:
-        print('error')
+
+    elif '.' in site and short not in url:# wenn die Seite nicht in url vorhanden ist
+        print('error')                    # drucke eine Fehlermeldung aus
         continue
-    else:
-        print('error')
+    else:                               # wenn kein '.' im input und die Seite nicht in url
+        print('error')                  # steht, drucke Fehler
         continue
 
 
