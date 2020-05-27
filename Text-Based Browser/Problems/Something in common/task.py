@@ -11,3 +11,5 @@ def calculate_quadratic(a, b, c, x):
 
 
 # create function common_part
+def common_part(y):
+    print("Value of the function equals", y)

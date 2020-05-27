@@ -148,6 +148,15 @@ files:
 
     TextBasedBrowserTest('browser.browser').run_tests()
   learner_created: false
+- name: browser/browser.py
+  visible: true
+  learner_created: true
+- name: tb_tabs/bloomberg.txt
+  visible: true
+  learner_created: true
+- name: tb_tabs/nytimes.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/79/stages/438/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 3

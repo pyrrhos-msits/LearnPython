@@ -16,18 +16,31 @@ https://www.w3schools.com/python/python_ref_string.asp
 1. Wichtige string methoden
 -------------------------------------------------------------------------------
 
-- str.replace(old, new[, count]) 
-	#replaces all occurrences of old with the new. The count argument is optional, and if it is specified, only the first count occurrences are replaced.
-- str.upper() 
-    #converts all characters of the string to the upper case.
-- str.lower() 
-	#converts all characters of the string to the lower case.
-- str.title() 
-    #converts the first character of each word to upper case.
-- str.swapcase() 
-    #converts upper case to lower case and vice versa.
+
 - str.capitalize() 
     #changes the first character of the string to the upper case and the rest to the lower case.
+
+- str.islower()
+    #Gibt 'True' oder 'False' zurück wenn alle Zeichen im String klein geschrieben sind
+
+- str.isupper()
+    #Gibt 'True' oder 'False' zurück wenn alle Zeichen im String gross geschrieben sind
+
+
+- str.lower() 
+	#converts all characters of the string to the lower case.
+
+- str.replace(old, new[, count]) 
+	#replaces all occurrences of old with the new. The count argument is optional, and if it is specified, only the first count occurrences are replaced.
+
+- str.swapcase() 
+    #converts upper case to lower case and vice versa.
+
+- str.title() 
+    #converts the first character of each word to upper case.
+
+- str.upper() 
+    #converts all characters of the string to the upper case.
 	
 # Beispiele
 print(message.upper())  # BONJOUR AND WELCOME TO PARIS!

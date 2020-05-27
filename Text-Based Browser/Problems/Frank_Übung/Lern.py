@@ -1,11 +1,12 @@
-def fib(n):
-    a, b = 0, 1
-    print('Startwert a =', a)
-    print('Startwert b =', b)
-    for _ in range(n):
-        print(a)
-        a, b = b, a + b
-        print('Folgewert a =', a)
-        print('Folgewert b =', b)
+import math
 
-fib(5)
+real_number = float(input())
+# change the next line
+check = None
+
+if math.isinf(real_number) or math.isnan(real_number):
+    check = False
+else:
+    check = True
+
+print(check)

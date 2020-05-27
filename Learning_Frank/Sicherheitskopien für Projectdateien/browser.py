@@ -61,7 +61,6 @@ def path_exists(dateiname): # vorher schon mal aufgerufen wurde, zeige die Datei
 # sieh in der Liste url nach ob die Seite dort existiert
 # wenn die Seite existiert zeige den Wert der variable an
 def showVariables(short):
-    print('Rufe jetzt function showVariables auf')
     if short == 'bloomberg':
         print(bloomberg_com)
     if short == 'nytimes':
@@ -83,7 +82,6 @@ while True:
         short = site # wenn kein '.' im Dateinamen
 
     if short in url:
-        pages.append(tmpSite)
         tmpSite = short
 
     dateiname = dirName + "\\" + short + ".txt" # dateiname z.B: tb_tabs\bloomberg.txt
@@ -93,9 +91,8 @@ while True:
 
     if site == 'back':
         print('Diese Seite steht in tmpSite :', tmpSite)
-        #print('Diese Seite würde jetzt aufgerufen : ', pages.pop())
-        showVariables(pages.pop())
-
+        print('Diese Seite würde jetzt aufgerufen : ', pages.pop())
+        pass
 
     elif os.path.exists(dateiname): # Wenn der Dateiname existiert , d.h. wenn die Seite
          path_exists(dateiname)     # vorher schon mal aufgerufen wurde, rufe function auf

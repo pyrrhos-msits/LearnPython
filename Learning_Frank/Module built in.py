@@ -13,10 +13,11 @@ https://docs.python.org/3/py-modindex.html
 
 Beispiele für Module
 - argparse
+- collections | -deque(Stapel)mei
 - math
 - os - auf Betriebssystem zugreifen | Pfade erstellen
 - random
-- string
+- string - z.B. ascii_lowercase oder ascii_uppercase für das ganze Alphabet
 - sys - zugriff auf Argumente
 
 
