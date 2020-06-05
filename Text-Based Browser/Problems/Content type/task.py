@@ -2,4 +2,4 @@ import requests
 
 
 def get_content_type(url):
-    pass
+    return requests.get(url).headers['Content-type']

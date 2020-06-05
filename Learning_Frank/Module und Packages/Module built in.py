@@ -14,12 +14,13 @@ https://docs.python.org/3/py-modindex.html
 Beispiele für Module
 - argparse
 - collections | -deque(Stapel)mei
+- copy | Modul zum kopieren von listen beachte deepcopy()
 - math
 - os - auf Betriebssystem zugreifen | Pfade erstellen
 - random
+- re - Regular expressions
+- requests muss installiert werden | http requests in Python
 - string - z.B. ascii_lowercase oder ascii_uppercase für das ganze Alphabet
 - sys - zugriff auf Argumente
-
-
 
 

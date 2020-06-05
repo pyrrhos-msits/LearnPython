@@ -1,3 +1,4 @@
+import copy
 # sorting function
 def bubble_sort(a):
     n = len(a)
@@ -9,9 +10,10 @@ def bubble_sort(a):
 
 # where copying takes place
 arr = [int(i) for i in input().split()]
+arr1 = copy.deepcopy(arr)
 sorted_arr = bubble_sort(arr)
 
-if arr == sorted_arr:
+if arr1 == sorted_arr:
     print('sorted')
 else:
     print('not sorted')

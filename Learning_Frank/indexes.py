@@ -14,10 +14,13 @@
 
 2. Finden des Indexes eines bestimmten Wertes in einer Liste
 -------------------------------------------------------------------------------
-    Finden des Indexes eines Wertes in einer Liste 
+    Finden des indexes eines Wertes in einer Liste 
     list = [2, 3, 5, 7, 9]
     for index in range(len(list)):
-        print('Der Index ist :', index, 'Der Wert lautet :' , list[index])
+        print('Der index ist :', index, 'Der Wert lautet :' , list[index])
+
+    for el in range(len(newList)): # Hier wird der INDEX ausgegeben. Nicht der Wert
+       print(el)
 
     Einfacher geht es so:
     list = [2, 3, 4, 5, 7, 9]

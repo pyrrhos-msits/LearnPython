@@ -62,7 +62,7 @@ rocket_science_scores = [0, -0, 0.0, +0]
 any(rocket_science_scores)  # False
 all(rocket_science_scores)  # False
 
-# all() flase weil 0 enthalten
+# all() false weil 0 enthalten
 math_scores = [0, 1, 2, 3]
 any(math_scores)  # True
 all(math_scores)  # False

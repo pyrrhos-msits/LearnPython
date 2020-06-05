@@ -75,7 +75,7 @@ whitespace_string = "     hey      "
 normal_string = "incomprehensibilities"
 # delete spaces from the left side
 whitespace_string.lstrip()  # "hey      "
-# delete "i" or "s" or "is" from the left side
+# löscht "i" oder "s" oder "is" von der linken Seite
 normal_string.lstrip("is")  # "ncomprehensibilities"
 # delete spaces from the right side
 whitespace_string.rstrip()  # "     hey"

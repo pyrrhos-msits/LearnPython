@@ -1,12 +1,12 @@
-import math
+import requests
 
-real_number = float(input())
-# change the next line
-check = None
+r = requests.get('https://docs.python.org')
+print(r)
 
-if math.isinf(real_number) or math.isnan(real_number):
-    check = False
+if r:
+    print('sucess')
 else:
-    check = True
+    print('Fail')
 
-print(check)
+print(r.text)
+print(r.headers['Content-Type'])
