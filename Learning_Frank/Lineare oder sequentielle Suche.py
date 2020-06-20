@@ -1,0 +1,4 @@
+'''
+Lineare Suche mit Enumerate
+'''
+
