@@ -48,7 +48,7 @@ Attribute:
 Ersetzen von untergeordneten Elementen durch Attribute
     <?xml version="1.0" encoding="UTF-8"?>
     <gallery>
-    <picture name='Sunset at Sea' author='Ivan Aivazovsky'/>
-    <picture name='The Black Square' author='Kazimir Malevich'/>
-    <picture name='Sunflowers' author='Vincent van Gogh'/>
+        <picture name='Sunset at Sea' author='Ivan Aivazovsky'/>
+        <picture name='The Black Square' author='Kazimir Malevich'/>
+        <picture name='Sunflowers' author='Vincent van Gogh'/>
     </gallery>

@@ -22,5 +22,6 @@ Beispiele für Module
 - requests muss installiert werden | http requests in Python
 - string - z.B. ascii_lowercase oder ascii_uppercase für das ganze Alphabet
 - sys - zugriff auf Argumente
+- lxml - schneller als built in etree. Zugriff auf XML Files
 
 

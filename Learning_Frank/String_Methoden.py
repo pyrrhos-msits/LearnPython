@@ -107,6 +107,10 @@ normal_string.strip("is")  # "ncomprehensibilitie"
     email.startswith("www.")  # False
     email.endswith("@something.com")  # True
 
+    Mehrere Argumente übergeben
+    word.startswith(('a','A'))] # Hierbei wird das erste Argument (der Suchbuchstabe) in Klammern übergeben
+
+
     Mann kann optional noch start und end parameter verwenden. Dann wird festgelegt 
     wo die suche anfängt und wo sie aufhört
         syntax: str.startswith(pattern, start, end)

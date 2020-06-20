@@ -26,6 +26,8 @@
     list = [2, 3, 4, 5, 7, 9]
     end = list.index(4)
     print(list[:end])
+
+    Und noch einfacher geht es mit enumerate => Enumerate.py
     
 3. Finden des Indexes eines bestimmten Wertes in einem String
 -------------------------------------------------------------------------------
